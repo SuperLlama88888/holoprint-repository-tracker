@@ -1,0 +1,11 @@
+preview
++ resource_pack/**
+- resource_pack/biomes/**
+- resource_pack/fogs/**
+- resource_pack/sounds/**
+- resource_pack/textures/**/*_mers.tga
+- resource_pack/textures/**/*.texture_set.json
++ metadata/vanilladata_modules/**
+
+v1.21.70.26-preview
+v1.21.120.22-preview

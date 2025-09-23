@@ -1,0 +1,13 @@
+{
+	"type": "module",
+	"scripts": {
+		"update": "node update.ts --experimental-transform-types"
+	},
+	"devDependencies": {
+		"@types/node": "^24.5.2"
+	},
+	"dependencies": {
+		"@types/micromatch": "^4.0.9",
+		"micromatch": "^4.0.8"
+	}
+}
