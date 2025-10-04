@@ -21,11 +21,13 @@ for(let owner of fs.readdirSync("track")) {
 		let globMatches = lines.filter(line => line.startsWith("+")).map(line => line.slice(1).trim());
 		let globNegations = lines.filter(line => line.startsWith("-")).map(line => line.slice(1).trim());
 		for(let i = 0; i < tags.length - 1; i++) {
-			let changedFiles = await exec(`git diff --no-renames --name-only ${tags[i]} ${tags[i + 1]}`, true);
-			if(globMatches.length || globNegations.length) {
-				changedFiles = changedFiles.split("\n").filter(filepath => globMatches.some(glob => micromatch.isMatch(filepath, glob)) && !globNegations.some(glob => micromatch.isMatch(filepath, glob))).join("\n");
+			for(let j = i + 1; j < tags.length; j++) {
+				let changedFiles = await exec(`git diff --no-renames --name-only ${tags[i]} ${tags[j]}`, true);
+				if(globMatches.length || globNegations.length) {
+					changedFiles = changedFiles.split("\n").filter(filepath => globMatches.some(glob => micromatch.isMatch(filepath, glob)) && !globNegations.some(glob => micromatch.isMatch(filepath, glob))).join("\n");
+				}
+				writeFile(`../lists/${owner}/${repo}/${tags[i]}_to_${tags[j]}.txt`, changedFiles);
 			}
-			writeFile(`../lists/${owner}/${repo}/${tags[i]}_to_${tags[i + 1]}.txt`, changedFiles);
 		}
 		
 		process.chdir("../");
