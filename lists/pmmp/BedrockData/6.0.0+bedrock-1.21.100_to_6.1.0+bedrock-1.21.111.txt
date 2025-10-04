@@ -1,0 +1,17 @@
+biome_definitions.json
+block_id_to_item_id_map.json
+block_properties_table.json
+block_state_meta_map.json
+canonical_block_states.nbt
+creative/construction.json
+creative/equipment.json
+creative/items.json
+creative/nature.json
+item_tags.json
+level_sound_id_map.json
+protocol_info.json
+r16_to_current_item_map.json
+recipes/shaped_crafting.json
+recipes/shapeless_crafting.json
+recipes/smelting.json
+required_item_list.json

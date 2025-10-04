@@ -1,0 +1,4 @@
+README.md
+nbt_upgrade_schema/0321_1.21.50.29_beta_to_1.21.60.28_beta.json
+nbt_upgrade_schema/0331_1.21.100.23_beta_to_1.21.110.26_beta.json
+schema_list.json
