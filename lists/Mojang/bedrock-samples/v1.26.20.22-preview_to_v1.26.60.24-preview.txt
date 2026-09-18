@@ -3,7 +3,11 @@ metadata/vanilladata_modules/mojang-blocks.json
 metadata/vanilladata_modules/mojang-entities.json
 metadata/vanilladata_modules/mojang-features.json
 metadata/vanilladata_modules/mojang-items.json
+resource_pack/animation_controllers/cat.animation_controllers.json
+resource_pack/animation_controllers/sheep.animation_controllers.json
 resource_pack/animation_controllers/sulfur_cube.animation_controllers.json
+resource_pack/animations/cat.animation.json
+resource_pack/animations/sheep.animation.json
 resource_pack/animations/sulfur_cube.animation.json
 resource_pack/atmospherics/atmospherics.json
 resource_pack/atmospherics/basalt_deltas_atmospherics.json
@@ -38,8 +42,10 @@ resource_pack/color_grading/roofed_forest_color_grading.json
 resource_pack/color_grading/swampland_color_grading.json
 resource_pack/color_grading/warmish_color_grading.json
 resource_pack/entity/boat.entity.json
+resource_pack/entity/cat.entity.json
 resource_pack/entity/chest_boat.entity.json
 resource_pack/entity/cushion.entity.json
+resource_pack/entity/sheep.entity.json
 resource_pack/entity/sulfur_cube.entity.json
 resource_pack/lighting/cold_lighting.json
 resource_pack/lighting/coolish_lighting.json
@@ -63,6 +69,7 @@ resource_pack/models/blocks/straw_bed_foot.geo.json
 resource_pack/models/blocks/straw_bed_head.geo.json
 resource_pack/models/entity/baby_villager.geo.json
 resource_pack/models/entity/cushion.geo.json
+resource_pack/models/entity/drowned.geo.json
 resource_pack/models/entity/sulfur_cube.geo.json
 resource_pack/models/entity/sulfur_cube_small.geo.json
 resource_pack/particles/arrowspell.json
@@ -481,6 +488,7 @@ resource_pack/textures/ui/poplar_sign.png
 resource_pack/textures/ui/share_glyph_apple.png
 resource_pack/textures/ui/share_glyph_generic.png
 resource_pack/textures/ui/share_glyph_google.png
+resource_pack/textures/ui/time.png
 resource_pack/ui/_global_variables.json
 resource_pack/ui/_ui_defs.json
 resource_pack/ui/authentication_screen.json
@@ -489,6 +497,7 @@ resource_pack/ui/beta_feedback_qr.json
 resource_pack/ui/cartography_screen_pocket.json
 resource_pack/ui/chat_screen.json
 resource_pack/ui/chat_settings_menu_screen.json
+resource_pack/ui/choose_realm_screen.json
 resource_pack/ui/coin_purchase_screen.json
 resource_pack/ui/create_world_upsell_screen.json
 resource_pack/ui/csb_sections/content_section.json
@@ -496,11 +505,13 @@ resource_pack/ui/csb_sections/csb_banner.json
 resource_pack/ui/csb_sections/csb_common.json
 resource_pack/ui/csb_sections/csb_upsell_dialog.json
 resource_pack/ui/data_driven_container_screen.json
+resource_pack/ui/day_one_experience_screen.json
 resource_pack/ui/dev_console_screen.json
 resource_pack/ui/encyclopedia_screen.json
 resource_pack/ui/expanded_skin_pack_screen.json
 resource_pack/ui/furnace_screen.json
 resource_pack/ui/furnace_screen_pocket.json
+resource_pack/ui/gameplay_common.json
 resource_pack/ui/gathering_info_screen.json
 resource_pack/ui/how_to_play_common.json
 resource_pack/ui/how_to_play_screen.json
@@ -524,13 +535,16 @@ resource_pack/ui/pocket_containers.json
 resource_pack/ui/popup_dialog.json
 resource_pack/ui/progress_screen.json
 resource_pack/ui/realms_allowlist.json
+resource_pack/ui/realms_plus_ended_screen.json
 resource_pack/ui/realms_settings_screen.json
+resource_pack/ui/realms_slots_screen.json
 resource_pack/ui/select_world_screen.json
 resource_pack/ui/server_form.json
 resource_pack/ui/settings_screen.json
 resource_pack/ui/settings_sections/general_section.json
 resource_pack/ui/settings_sections/realms_world_section.json
 resource_pack/ui/settings_sections/settings_common.json
+resource_pack/ui/settings_sections/social_section.json
 resource_pack/ui/settings_sections/world_section.json
 resource_pack/ui/skin_pack_pdp.json
 resource_pack/ui/skin_pack_purchase_screen.json
